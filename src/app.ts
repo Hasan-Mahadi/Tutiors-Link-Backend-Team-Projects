@@ -2,9 +2,9 @@ import express, { Application } from "express";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import router from "./app/router/router";
-import globalErrorHandler from "./app/middleWare/globalErrorHandler";
-import notFound from "./app/middleWare/notFound";
-
+// import globalErrorHandler from "./app/middleWare/globalErrorHandler";
+// import notFound from "./app/middleWare/notFound";
+// 
 const app: Application = express();
 
 app.use(express.json());
@@ -21,7 +21,7 @@ app.use(
 app.use("/api", router);
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Hello World Hasan");
 });
 // const test = async (req: Request, res: Response) => {
 //   Promise.reject()
@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 
 // app.get('/', test);
 
-app.use(globalErrorHandler);
-app.use(notFound);
+// app.use(globalErrorHandler);
+// app.use(notFound);
 
 export default app;
