@@ -21,7 +21,7 @@ app.use(
 app.use("/api", router);
 
 app.get("/", (req, res) => {
-  res.send("Hello World Hasan");
+  res.send("Hello World Hasan Mahadi");
 });
 // const test = async (req: Request, res: Response) => {
 //   Promise.reject()
