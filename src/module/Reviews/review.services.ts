@@ -1,10 +1,11 @@
 import { Review } from "./reviews.model";
 
 interface ReviewPayload {
-  teacher: string;
+ 
   student: string;
   comment: string;
   rating: number;
+  teacher: string;
 }
 
 const createReviewIntoDb = async (payload: ReviewPayload) => {
